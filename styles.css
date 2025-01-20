@@ -1,0 +1,112 @@
+form {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border: 4px solid black;
+    border-radius: 10px;
+}
+
+.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+.form-element {
+    padding: 10px;
+
+}
+
+.navbar li {
+   float: left;
+}
+  
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  
+li a:hover {
+    background-color: #111;
+}
+
+input {
+    min-width: 150px;
+    max-width: 150px;
+}
+
+.center-form {
+    width:400px;
+    margin: 0 auto;
+    display:flex;
+    justify-content: center;
+}
+
+.submit-btn {
+    background-color: rgb(35, 183, 35);
+    padding: 10px;
+    outline: none;
+    border: none;
+    color: white;
+    border-radius: 10px;
+    font-weight: 700;
+    width: 100px;
+    margin: 10px;
+}
+
+.submit-btn:hover {
+    cursor: pointer;
+    background-color: rgba(35, 183, 35, .7);
+}
+
+textarea {
+    display: flex;
+    width: 250px;
+    height: 70px;
+}
+
+.form-title {
+    background-color: black;
+    padding: 10px;
+    color: white;
+    border: 2px solid black;
+}
+
+.form-title {
+    margin: 0px;
+}
+
+.recipes-container {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-wrap: wrap; 
+    gap: 20px;   
+}
+
+.recipe {
+    border: 2px solid black;
+    width: 300px;
+    cursor: pointer;
+}
+
+.recipe img {
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.recipe p {
+    text-align: center;
+}
+
+.recipe a {
+    text-decoration: none;
+    color: black;
+}

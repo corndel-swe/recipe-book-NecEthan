@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css">
+    <title>Recipe Book</title>
+  </head>
+  <body>
+    <nav>
+        <ul class="navbar">
+            <li><a class="active" href="index.html" aria-label="Go to home page">Home</a></li>
+            <li><a href="https://www.bbc.co.uk/" aria-label="Go to About page on BBC">About</a></li>
+            <li><a href="contact.html" aria-label="Go to contact section">Contact</a></li>
+        </ul>
+    </nav>
+ 
+    <header>
+      <h1>Recipe Book</h1>
+    </header>
+    <hr />
+    
+    <section>
+      <h2>Peperoni Pizza Recipe</h2>
+      
+        <h3>Ingredients:</h3>
+        <ul>
+          <li>1 pizza dough</li>
+          <li>1/2 cup pizza sauce</li>
+          <li>1 1/2 cups shredded mozzarella cheese</li>
+          <li>1/2 cup sliced pepperoni</li>
+          <li>Olive oil</li>
+        </ul>
+
+        <h3>Instructions:</h3>
+        <ol>
+          <li>Preheat your oven to 475°F (245°C).</li>
+          <li>Roll out your pizza dough on a floured surface.</li>
+          <li>Spread pizza sauce evenly over the dough.</li>
+          <li>Sprinkle mozzarella cheese over the sauce.</li>
+          <li>Arrange sliced pepperoni on top of the cheese.</li>
+          <li>Brush the edges of the dough with olive oil if desired.</li>
+          <li>Bake for 10-12 minutes until the crust is golden and the cheese is melted.</li>
+          <li>Slice and enjoy your delicious pepperoni pizza!</li>
+        </ol>
+    </section>
+    
+    <hr />
+    
+    <section class="center-form">
+        <form>
+                <h3 class="form-title">Rating/Comment</h3>
+            
+                <div class="form-element">
+                    <label for="rating">Rating</label>
+                    <input type="number" name="rating" id="rating" min="1" max="10" placeholder="Rating" required>
+                </div>
+                
+                <div class="form-element">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" placeholder="Your name" required>
+                </div>
+                
+                <div class="form-element">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="Your email" required>
+                </div>
+                
+                <div class="form-element">
+                    <label for="comment">Comment</label>
+                    <textarea id="comment" name="comment" placeholder="Write your comment here..." required></textarea>
+                </div>
+                
+                <div class="submit-btn-container">
+                    <button class="submit-btn" type="submit">Submit</button>
+                </div>
+        </form>
+    </section>
+
+  </body>
+</html>
