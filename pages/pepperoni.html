@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles.css" />
+    <title>Recipe Book</title>
+  </head>
+  <body>
+      
+    <nav>
+      <ul class="navbar">
+        <div class="logo">
+          <a href="../index.html">
+            <img src="../images/logo.png" alt="">
+          </a>
+        </div>
+        <div class="navbar-elements">
+          <li><a class="active" href="../index.html" aria-label="Go to home page">Home</a></li>
+          <li><a href="https://www.bbc.co.uk/" aria-label="Go to About page on BBC">About</a></li>
+          <li><a href="../contact.html" aria-label="Go to contact section">Contact</a></li>
+          <li><a class="book-btn" href="#">Book Now</a></li>
+        </div>
+
+      </ul>
+         
+    </nav>
+    <section class="recipe-page-img">
+      
+      <img src="https://th.bing.com/th/id/R.f64180cd505c113b679c3d4b69e46105?rik=x1yq%2blcFdwfhsA&pid=ImgRaw&r=0" alt="">
+      <div class="recipe-text">
+        <h1 class="title">Easy to follow recpies</h1>
+      </div>
+    </section>
+
+
+    <section class="container">
+      <div class="recipe-img">
+        <img
+          src="https://th.bing.com/th/id/OIP.3Z4gvi7mZEpin_3jIwLHHgHaE7?w=233&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+          alt=""
+        />
+      </div>
+      <div class="content">
+        <h2>Peperoni Pizza Recipe</h2>
+
+        <h3>Ingredients:</h3>
+        <ul>
+          <li>1 pizza dough</li>
+          <li>1/2 cup pizza sauce</li>
+          <li>1 1/2 cups shredded mozzarella cheese</li>
+          <li>1/2 cup sliced pepperoni</li>
+          <li>Olive oil</li>
+        </ul>
+
+        <h3>Instructions:</h3>
+        <ol>
+          <li>Preheat your oven to 475°F (245°C).</li>
+          <li>Roll out your pizza dough on a floured surface.</li>
+          <li>Spread pizza sauce evenly over the dough.</li>
+          <li>Sprinkle mozzarella cheese over the sauce.</li>
+          <li>Arrange sliced pepperoni on top of the cheese.</li>
+          <li>Brush the edges of the dough with olive oil if desired.</li>
+          <li>
+            Bake for 10-12 minutes until the crust is golden and the cheese is
+            melted.
+          </li>
+          <li>Slice and enjoy your delicious pepperoni pizza!</li>
+        </ol>
+      </div>
+    </section>
+
+    <hr />
+    <h3 class="form-title">Rating/Comment</h3>
+
+    <section class="center-form">
+      <form>
+
+        <div class="form-element">
+          <input
+            type="number"
+            name="rating"
+            id="rating"
+            min="1"
+            max="10"
+            placeholder="Rating"
+            required
+          />
+        </div>
+
+        <div class="form-element">
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Your name"
+            required
+          />
+        </div>
+
+        <div class="form-element">
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Your email"
+            required
+          />
+        </div>
+
+        <div class="form-element">
+          <textarea
+            id="comment"
+            name="comment"
+            placeholder="Write your comment here..."
+            required
+          ></textarea>
+        </div>
+
+        <div class="submit-btn-container">
+          <button class="submit-btn" type="submit">Submit</button>
+        </div>
+      </form>
+    </section>
+  </body>
+</html>

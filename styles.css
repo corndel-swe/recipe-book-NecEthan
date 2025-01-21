@@ -4,11 +4,12 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'poppins', 'sans-serif';
+    background-color: beige;
 }
 
 /* Home Page */
 nav {
-    position: fixed;
+    position: absolute;
     width: 100%;
     top: 0;
     left: 0;
