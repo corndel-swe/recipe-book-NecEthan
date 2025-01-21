@@ -7,28 +7,32 @@
     <title>Recipe Book</title>
   </head>
   <body>
+      
     <nav>
       <ul class="navbar">
-        <li>
-          <a class="active" href="index.html" aria-label="Go to home page"
-            >Home</a
-          >
-        </li>
-        <li>
-          <a href="https://www.bbc.co.uk/" aria-label="Go to About page on BBC"
-            >About</a
-          >
-        </li>
-        <li>
-          <a href="contact.html" aria-label="Go to contact section">Contact</a>
-        </li>
-      </ul>
-    </nav>
+        <div class="logo">
+          <a href="index.html">
+            <img src="images/logo.png" alt="">
+          </a>
+        </div>
+        <div class="navbar-elements">
+          <li><a class="active" href="index.html" aria-label="Go to home page">Home</a></li>
+          <li><a href="https://www.bbc.co.uk/" aria-label="Go to About page on BBC">About</a></li>
+          <li><a href="contact.html" aria-label="Go to contact section">Contact</a></li>
+          <li><a class="book-btn" href="#">Book Now</a></li>
+        </div>
 
-    <header>
-      <h1>Recipe Book</h1>
-    </header>
-    <hr />
+      </ul>
+         
+    </nav>
+    <section class="recipe-page-img">
+      
+      <img src="https://th.bing.com/th/id/R.f64180cd505c113b679c3d4b69e46105?rik=x1yq%2blcFdwfhsA&pid=ImgRaw&r=0" alt="">
+      <div class="recipe-text">
+        <h1 class="title">Easy to follow recpies</h1>
+      </div>
+    </section>
+
 
     <section class="container">
       <div class="recipe-img">
@@ -73,7 +77,6 @@
       <form>
 
         <div class="form-element">
-          <!-- <label for="rating">Rating</label> -->
           <input
             type="number"
             name="rating"
@@ -86,7 +89,6 @@
         </div>
 
         <div class="form-element">
-          <!-- <label for="name">Name</label> -->
           <input
             type="text"
             name="name"
@@ -97,7 +99,6 @@
         </div>
 
         <div class="form-element">
-          <!-- <label for="email">Email</label> -->
           <input
             type="email"
             name="email"
@@ -108,7 +109,6 @@
         </div>
 
         <div class="form-element">
-          <!-- <label for="comment">Comment</label> -->
           <textarea
             id="comment"
             name="comment"
