@@ -74,7 +74,7 @@
     <h3 class="form-title">Rating/Comment</h3>
 
     <section class="center-form">
-      <form>
+      <form id="comment-form">
 
         <div class="form-element">
           <input
@@ -121,6 +121,46 @@
           <button class="submit-btn" type="submit">Submit</button>
         </div>
       </form>
+      
+      <div id="comments"></div>
     </section>
   </body>
+  <script>
+    const form = document.getElementById('comment-form');
+    const commentList = document.getElementById('comments');
+
+    function addComment(rating, name, email, commentText) {
+      const newComment = document.createElement('div');
+      newComment.classList.add("comment");
+
+      const commentContent = document.createElement('p');
+      commentContent.textContent = `Comment: ${commentText}`;
+
+      const ratingContent = document.createElement('p');
+      ratingContent.textContent = `Rating: ${rating}/10`;
+
+      const userContent = document.createElement('p');
+      userContent.textContent = `Name: ${name}`;
+
+      newComment.appendChild(ratingContent);
+      newComment.appendChild(userContent);
+      newComment.appendChild(commentContent);
+
+      commentList.appendChild(newComment);
+    }
+
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();  
+
+      const rating = document.getElementById('rating').value;
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      const commentText = document.getElementById('comment').value;
+      console.log(commentText)
+
+      addComment(rating, name, email, commentText);
+
+      form.reset();
+    });
+  </script>
 </html>
